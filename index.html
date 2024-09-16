@@ -4,329 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven_Maurya</title>
-    <!-- Fontawosome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+    <title>Naman's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"> I Am </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">My Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Conatact</a>
-                    </li>
-
-
-
-
-                </ul>
-
-            </div>
-        </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academic-details">Academic Details</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+        </ul>
     </nav>
 
-    <!-- Herosection -->
-    <section class="herosection">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="hero_card1">
-                        <div class="user "><i class="fa-solid fa-user"></i></div>
-                        <h1>Hi, I’m Naman</h1>
-                        <p>Web designer and developer working as a intern in innovilla Private Limited.</p>
-                        <div class="cardicons">
-                            <i class="fa-solid fa-file"></i>
-                            <p>Web Designer and Developer</p>
-                        </div>
-                        <div class="cardicons">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>namanm0031@gmail.com</p>
-                        </div>
-                        <div class="cardicons">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Uttar Pradesh India 222162</p>
-                        </div>
-                    </div>
-                    <div class="hero_card2 ">
-                        <h3>Download my curriculum vitae:</h3>
-                        <div class="hero_btn">
-                            <a class="btn" href="#">Download CV</a>
-                            <a class="btn" href="#">Contact Me</a>
-                            <!-- <button type="button" class="btn" >Download CV</button>
-                            <button type="button" class="btn">Contact Me</button> -->
+    <!-- About Section -->
+    <section id="about">
+        <a href="https://www.instagram.com" target="_blank" id="instagram-link">
+            <h1>Naman Kumar Maurya</h1>
+        </a>
+        <p>Greater Noida</p>
+        <p><b class="text_size">Email:</b> <a href="mailto:naman0031@email.com">naman0031@email.com</a>
+            |<b class="text_size">Mobile:</b><a href="tel:+918960612131">+91 8960612131</a>
+        </p>
+        <p><b class="text_size">LinkedIn-id:</b><a href="https://www.linkedin.com/in/namankumarmaurya"
+                target="_blank"> namankumarmaurya</a>
+            | <b class="text_size">GitHub-id:</b> <a href="https://github.com/Namanmaurya"
+                target="_blank">Namannamurya</a>
+        </p>
+        <p> <b class="text_size">Professional Summary:</b> Aspiring frontend developer with a strong foundation in web
+            technologies and a
+            passion for creating dynamic and responsive websites. Experienced in both individual and collaborative
+            project settings.</p>
+    </section>
+
+
+
+
+    <!-- Academic Details Section -->
+    <section id="academic-details">
+        <h2>Academic Details</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>University</th>
+                <th>Year</th>
+                <th>CPI/%</th>
+                <th>Document</th>
+            </tr>
+            <tr>
+                <td>MCA</td>
+                <td>Galgotias University, Greater Noida UP</td>
+                <td>2023 to 2025</td>
+                <td>8.0</td>
+                <td><a href="path/to/mca-document.pdf" class="document-icon" download><i class="fas fa-file-download"></i></a></td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>Veer Bahadur Singh Purvanchal University, Jaunpur UP</td>
+                <td>2020 to 2023</td>
+                <td>76%</td>
+                <td><a href="path/to/mca-document.pdf" class="document-icon" download><i class="fas fa-file-download"></i></a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Left side skills -->
+            <div class="skills-column">
+                <div class="skill-item">
+                    <span>HTML & CSS</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="image">
-                        <img src="image/naman.png" alt="developer image">
+                <div class="skill-item">
+                    <span>C++</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>PHP</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right side skills -->
+            <div class="skills-column">
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>MySQL</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Ruby</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Bash/Shell</span>
+                    <div class="skill-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 75%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <!-- Experience -->
-
-    <section class="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="ex_tatle text-center">
-                        <h1>My Experience</h1>
-                    </div>
-                    <div class="ex_card">
-
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="ex_card_img text-center">
-                                    <img src="image/experience-image-01.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="ex_text">
-                                    <p>Present</p>
-                                    <h3>Software Develop.</h3>
-                                    <h4>Intern</h4>
-                                    <h5>Innovilla Private limited</h5>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 text-center ex_btn">
-                                <a class="btn" href="#">Contact me</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="ex_card">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="ex_card_img text-center">
-                                    <img src="image/experience-image-01.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="ex_text">
-                                    <p>Present</p>
-                                    <h3>Web Design.</h3>
-                                    <h4>Intern</h4>
-                                    <h5>Innovilla Private limited</h5>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 text-center ex_btn">
-                                <a class="btn" href="#">Contact me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Innvocilla | May 2023 – June 2023 | Varanasi - On Site</li>
+            <li>Salesqueen Software Solutions | July 2024 – November 2024 | Chennai - Remote</li>
+        </ul>
     </section>
 
-    <!-- Education-->
-    <section class="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="ex_tatle text-center">
-                        <h1>Education</h1>
-                    </div>
-                    <div class="ex_card">
-
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="ex_card_img text-center">
-                                    <img src="image/colleges-image-02.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="ex_text">
-                                    <p>2016-2018</p>
-                                    <h3>10th</h3>
-                                    <h4></h4>
-                                    <h5></h5>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 text-center ex_btn">
-                                <a class="btn" href="#">Admission</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ex_card">
-
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="ex_card_img text-center">
-                                    <img src="image/colleges-image-02.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="ex_text">
-                                    <p>2018-2020</p>
-                                    <h3>12th</h3>
-                                    <h4></h4>
-                                    <h5></h5>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 text-center ex_btn">
-                                <a class="btn" href="#">Admission</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ex_card">
-
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="ex_card_img text-center">
-                                    <img src="image/colleges-image-02.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="ex_text">
-                                    <p>2020-2023</p>
-                                    <h3>Bachelors's in Computer Application</h3>
-                                    <h4></h4>
-                                    <h5>VBSPU JAUNPUR UP</h5>
-                                </div>
-
-                            </div>
-                            <div class="col-md-4 text-center ex_btn">
-                                <a class="btn" href="#">Admission</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Projects</h2>
+    
+            <div class="project-card">
+                <h3>BMI Calculator</h3>
+                <p><strong>Status:</strong> Working</p>
+                <p>I created a webpage to calculate body mass and predict the ideal weight according to age and height. This webpage includes fun features such as calculating your weight on different planets.</p>
+                <a href="URL_FOR_BMI_CALCULATOR" class="link-button">View Project</a>
+            </div>
+    
+            <div class="project-card">
+                <h3>Law Firm Website</h3>
+                <p><strong>Guide:</strong> Aman Verma (May 15 - May 30)</p>
+                <p>I worked on a multi-page website for a law firm as part of a group project. I created three pages: the homepage, the contact page, and the about us page. I designed these sections using HTML, CSS, JavaScript, and Bootstrap to ensure the website is fully responsive.</p>
+                <a href="URL_FOR_LAW_FIRM_WEBSITE" class="link-button">View Project</a>
+            </div>
+    
+            <div class="project-card">
+                <h3>Medical Shop Website</h3>
+                <p><strong>Guide:</strong> Aman Verma (May 1 - May 14)</p>
+                <p>I developed a multi-page website for a medical shop using HTML, CSS, JavaScript, and Bootstrap. The website includes multiple pages, each with various sections. The product section is divided into categories for better organization.</p>
+                <a href="URL_FOR_MEDICAL_SHOP_WEBSITE" class="link-button">View Project</a>
             </div>
         </div>
-
-
     </section>
-    <!-- My Resume -->
+    
 
-    <!-- Contact Page -->
-    <section class="contact_page">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="con_title text-center">
-                        <h1>Contact With Me</h1>
-                    </div>
-                    
-                    
-                    <div class="container contact">
-                        <div class="row">
-                            <div class="col-md-3">
-                              
-                                <div class="contact-info">
-                                    
-                                    <i class="fa-solid fa-address-card"></i>
-                                    <h2>Contact Us</h2>
-                                    <h4>We would love to hear from you !</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="contact-form">
-                                    <div class="form-group">
-                                      <label class=".contact-form col-sm-2" for="fname">First Name:</label>
-                                      <div class="col-sm-10">          
-                                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="control-label col-sm-2" for="lname">Last Name:</label>
-                                      <div class="col-sm-10">          
-                                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="control-label col-sm-2" for="email">Email:</label>
-                                      <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label class="control-label col-sm-2" for="comment">Comment:</label>
-                                      <div class="col-sm-10">
-                                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="form-group mt-3">        
-                                      <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn">Submit</button>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Lead college group project in MCA and BCA</li>
+            <li>Top 10 in class in BCA</li>
+            <li>Top 3 in class in school</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Contact Section -->
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:naman0031@email.com">naman0031@email.com</a></li>
+                        <li>Phone: <a href="tel:+8980661231">+8980661231</a></li>
+                    </ul>
                 </div>
-               
+    
+                <!-- Links Section -->
+                <div class="footer-section">
+                    <h4>Connect with Me</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/namanmaurya" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/Namanmaurya" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Separator Line -->
+            <div class="footer-separator"></div>
+
+
+            <!-- Copyright and Back to Top -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Naman Kumar Maurya. All Rights Reserved.</p>
                 
             </div>
         </div>
-    </section>
+    </footer>
+    
 
-    <section class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copy_right text-center mt-2 mb-2">
-                        <h4>All &#169 Riserved Naman kumar Maurya</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+        <i class="fa fa-arrow-up"></i> <!-- Upward arrow icon from Font Awesome -->
+    </button>
+
+
+    <script src="app.js"></script>
 </body>
-<!-- javascript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 
 </html>
