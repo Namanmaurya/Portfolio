@@ -15,14 +15,34 @@ document.getElementById('back-to-top').onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-// Smooth scrolling for navbar links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
+// skill js
+document.addEventListener("DOMContentLoaded", function() {
+    const dots = document.querySelectorAll('.dot');
+    const tooltip = document.getElementById('tooltip');
+
+    dots.forEach(dot => {
+        dot.addEventListener('mouseenter', (event) => {
+            const dotLevel = dot.getAttribute('data-level');
+            const rect = dot.getBoundingClientRect();
+
+            // Set tooltip position dynamically
+            tooltip.style.left = `${rect.left + window.pageXOffset}px`;
+            tooltip.style.top = `${rect.top - 40 + window.pageYOffset}px`;
+            tooltip.style.display = 'block';
+            tooltip.style.opacity = '1';
+            tooltip.style.transform = 'translateY(0)';
+
+            // Show the skill percentage in the tooltip
+            tooltip.textContent = `Skill Level: ${dotLevel}`;
+        });
+
+        dot.addEventListener('mouseleave', () => {
+            tooltip.style.opacity = '0';
+            tooltip.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+                tooltip.style.display = 'none';
+            }, 300);
         });
     });
 });
