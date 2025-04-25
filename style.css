@@ -1,6 +1,9 @@
-/* General Paper Background */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #dfe6e9;
+    background-color: #fafbfb;
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
@@ -57,38 +60,48 @@ th {
 /* Navigation Bar */
 
 nav {
-    background-color: #333;
-    color: #fff; 
-    text-align: center;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 4;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    /* light transparent glass look */
+    backdrop-filter: blur(12px);
+    /* glassmorphism blur */
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    padding: 0;
+    margin: 0;
+    padding: 14px 20px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    margin: 0 18px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    padding: 0.5em;
-    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #555;
+    background-color: transparent;
+    color: orangered;
+   
 }
-
 
 section {
     scroll-margin-top: 70px;
@@ -141,14 +154,14 @@ section {
 }
 
 #about p a:hover {
-    color: gray;
+    color: orangered;
 }
 
 
 /* Style for the Instagram link */
 #instagram-link {
     text-decoration: none;
-    color: #333333; 
+    color: #333333;
 }
 
 
@@ -175,22 +188,11 @@ section {
 }
 
 .document-icon:hover {
-    color: #555;
+    color: orangered;
 }
 
 
-/* Skills Section Styling */
-/* #skills {
-    padding: 50px 0;
-    text-align: center;
-    background: linear-gradient(to right, #f0f2f5, #e4e9f0);
-} */
 
-/* #skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-} */
 
 .skills-container {
     display: flex;
@@ -251,11 +253,11 @@ section {
 
 /* Hover Effects */
 .skill-item:hover .progress-circle {
-    stroke: #03a9f4;
+    stroke: orangered;
 }
 
 .skill-item:hover .skill-percentage {
-    color: #03a9f4;
+    color: orangered;
 }
 
 /* Responsive Design */
@@ -305,7 +307,7 @@ section {
 
 .link-button {
     position: absolute;
-    right: 30px ;
+    right: 30px;
     top: 15px;
     margin-top: 10px;
     padding: 10px 15px;
@@ -317,7 +319,7 @@ section {
 }
 
 .link-button:hover {
-    background-color:#555;
+    background-color: #555;
 }
 
 
@@ -346,14 +348,14 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    
+
 
 }
 
 .footer-separator {
     width: 100%;
     border-top: 1px solid #ffffff;
-    
+
 }
 
 
