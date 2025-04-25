@@ -100,7 +100,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: transparent;
     color: orangered;
-   
+
 }
 
 section {
@@ -319,7 +319,7 @@ section {
 }
 
 .link-button:hover {
-    background-color: #555;
+    background-color: orangered;
 }
 
 
@@ -329,43 +329,38 @@ section {
 
 /* Footer Section */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: transparent; /* Transparent background */
+    color: #000000; /* Black text */
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 40px;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    width: 80%;
-
-
-}
-
-.footer-separator {
-    width: 100%;
-    border-top: 1px solid #ffffff;
-
-}
-
-
-.footer-section {
-    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .footer-section h4 {
-    margin-bottom: 10px;
     font-size: 18px;
+    margin-bottom: 12px;
+    color: #000000; /* Black */
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer-section h4:hover {
+    color: #ff6f00; /* Orange on hover */
+    border-color: #ff6f00;
 }
 
 .footer-section ul {
@@ -374,17 +369,40 @@ footer {
 }
 
 .footer-section ul li {
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
-.footer-section ul li a {
-    color: white;
+.footer-section a {
+    color: #000000; /* Black links */
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-    color: gray;
+.footer-section a:hover {
+    color: #ff6f00; /* Orange on hover */
+    transform: translateX(4px);
 }
+
+.footer-separator {
+    margin: 30px 0;
+    height: 1px;
+    background-color: #000000; /* Black separator */
+    opacity: 0.2;
+    transition: background-color 0.3s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #000000; /* Black copyright text */
+    opacity: 0.85;
+}
+
+.footer-bottom:hover {
+    color: #ff6f00;
+}
+
+
 
 /* Optional: Responsiveness for smaller screens */
 @media (max-width: 768px) {
